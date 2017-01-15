@@ -10,7 +10,6 @@ import static org.junit.Assert.*;
 public class GreetingControllerTest {
     @Before
     public void setUp() throws Exception {
-
     }
 
 }
