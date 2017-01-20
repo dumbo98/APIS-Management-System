@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html mlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"></link>
+    <link href="css/apis-management-system.css" th:href="@{/css/apis-management-system.css}" rel="stylesheet" type="text/css"></link>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">User Information</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>Label</th>
+                    <th>Value</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>NAME</td>
+                    <td>Taeho Scott Kim</td>
+                  </tr>
+                  <tr>
+                    <td>RESIDENTIAL ADDRESS</td>
+                    <td>5263 Prairie Willow Way, Centreville, VA 20120</td>
+                  </tr>
+                  <tr>
+                    <td>BUSINESS ADDRESS</td>
+                    <td>1234 Business Ave, Centreville, VA 20120</td>
+                  </tr>
+                  <tr>
+                    <td>HOME PHONE</td>
+                    <td>703-789-1232</td>
+                  </tr>
+                  <tr>
+                    <td>BUSINESS PHONE</td>
+                    <td>703-987-0923</td>
+                  </tr>
+                  <tr>
+                    <td>MOBILE PHONE</td>
+                    <td>703-987-0363</td>
+                  </tr>
+                  <tr>
+                    <td>HOME EMAIL</td>
+                    <td>ScottKim@techie.com</td>
+                  </tr>
+                  <tr>
+                    <td>BUSINESS EMAIL</td>
+                    <td>Scott.Kim@itgfirm.com</td>
+                    <!-- </tbody-->
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Driver Information</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>DOB</th>
+                    <th>Marital Status</th>
+                    <th>DL State</th>
+                    <th>DL#</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Scott</td>
+                    <td>Kim</td>
+                    <td>6/24/1970</td>
+                    <td>Married</td>
+                    <td>VA</td>
+                    <td>123456789</td>
+                  </tr>
+                  <tr>
+                    <td>Leah</td>
+                    <td>Kim</td>
+                    <td>8/23/1970</td>
+                    <td>Married</td>
+                    <td>VA</td>
+                    <td>987654321</td>
+                  </tr>
+                  <tr>
+                    <td>Christian</td>
+                    <td>Kim</td>
+                    <td>2/3/2003</td>
+                    <td>Single</td>
+                    <td>VA</td>
+                    <td>102030405</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Vehicle Information</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Type</th>
+                    <th>Vin</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>2011</td>
+                    <th>Lexus</th>
+                    <th>RX350</th>
+                    <td>SUV</td>
+                    <td>123456789</td>
+                  </tr>
+                  <tr>
+                    <td>2016</td>
+                    <th>Honda</th>
+                    <th>Accord</th>
+                    <td>Sedan</td>
+                    <td>987654321</td>
+                  </tr>
+                  <tr>
+                    <td>2020</td>
+                    <th>Toyota</th>
+                    <th>Camry</th>
+                    <td>Sedan</td>
+                    <td>102030405</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Coverage Information</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>Label</th>
+                    <th>Value</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>CARRIER</td>
+                    <td>Erie</td>
+                  </tr>
+                  <tr>
+                    <td>POLICY #</td>
+                    <td>1234567890</td>
+                  </tr>
+                  <tr>
+                    <td>BI</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>UMB</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>COMP</td>
+                    <td>300000</td>
+                  </tr>
+                  <tr>
+                    <td>TOWING</td>
+                    <td>60</td>
+                  </tr>
+                  <tr>
+                    <td>PD</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>UMP</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>COLL</td>
+                    <td>100000</td>
+                  </tr>
+                  <tr>
+                    <td>MP</td>
+                    <td>200000</td>
+                  </tr>
+                  <tr>
+                    <td>TL</td>
+                    <td>200000</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -20,10 +20,6 @@ public class Address {
         this.type = type;
     }
 
-    public enum AddressType {
-        HOME, BUSINESS, MAILING;
-    }
-
     public String getAddress1() {
         return address1;
     }
@@ -70,5 +66,9 @@ public class Address {
 
     public void setType(AddressType type) {
         this.type = type;
+    }
+
+    public enum AddressType {
+        RESIDENTIAL, BUSINESS;
     }
 }

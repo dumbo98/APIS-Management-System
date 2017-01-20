@@ -12,10 +12,6 @@ public class Phone {
         this.type = type;
     }
 
-    public enum PhoneType {
-        HOME, BUSINESS, MOBILE;
-    }
-
     public String getNumber() {
         return number;
     }
@@ -30,5 +26,9 @@ public class Phone {
 
     public void setType(PhoneType type) {
         this.type = type;
+    }
+
+    public enum PhoneType {
+        RESIDENTIAL, BUSINESS, MOBILE;
     }
 }

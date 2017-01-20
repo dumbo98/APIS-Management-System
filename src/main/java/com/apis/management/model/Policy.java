@@ -1,25 +1,31 @@
 package com.apis.management.model;
 
+import java.util.Date;
+import java.util.List;
+
 /**
  * Created by scottkim on 1/16/17.
  */
 public class Policy {
     private CarrierType carrier;
-    private String policyNumber;
+    private String number;
     private PolicyType type;
+    private PolicyStatus status;
+    private Date effectiveDate;
+    private Person policyHolder;
+    private List<Person> drivers;
+    private List<Vehicle> vehicles;
 
-    public Policy(CarrierType carrier, String policyNumber, PolicyType type) {
+    public Policy(CarrierType carrier, String number, PolicyType type, PolicyStatus status, Date effectiveDate,
+                  Person policyHolder, List<Person> drivers, List<Vehicle> vehicles) {
         this.carrier = carrier;
-        this.policyNumber = policyNumber;
+        this.number = number;
         this.type = type;
-    }
-
-    public enum CarrierType {
-        ERIE, PROGRESSIVE, AIC, GMAC;
-    }
-
-    public enum PolicyType {
-        AUTO, HOME, COMMERCIAL, LIFE;
+        this.status = status;
+        this.effectiveDate = effectiveDate;
+        this.policyHolder = policyHolder;
+        this.drivers = drivers;
+        this.vehicles = vehicles;
     }
 
     public CarrierType getCarrier() {
@@ -30,12 +36,12 @@ public class Policy {
         this.carrier = carrier;
     }
 
-    public String getPolicyNumber() {
-        return policyNumber;
+    public String getNumber() {
+        return number;
     }
 
-    public void setPolicyNumber(String policyNumber) {
-        this.policyNumber = policyNumber;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public PolicyType getType() {
@@ -44,5 +50,57 @@ public class Policy {
 
     public void setType(PolicyType type) {
         this.type = type;
+    }
+
+    public PolicyStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(PolicyStatus status) {
+        this.status = status;
+    }
+
+    public Date getEffectiveDate() {
+        return effectiveDate;
+    }
+
+    public void setEffectiveDate(Date effectiveDate) {
+        this.effectiveDate = effectiveDate;
+    }
+
+    public Person getPolicyHolder() {
+        return policyHolder;
+    }
+
+    public void setPolicyHolder(Person policyHolder) {
+        this.policyHolder = policyHolder;
+    }
+
+    public List<Person> getDrivers() {
+        return drivers;
+    }
+
+    public void setDrivers(List<Person> drivers) {
+        this.drivers = drivers;
+    }
+
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
+    }
+
+    public enum CarrierType {
+        ERIE, PROGRESSIVE, AIC, GMAC, OTHER;
+    }
+
+    public enum PolicyType {
+        HOME, AUTO, COMMERCIAL, LIFE;
+    }
+
+    public enum PolicyStatus {
+        ACTIVE, PENDING, CANCELLED;
     }
 }
